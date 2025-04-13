@@ -1,3 +1,12 @@
+# 👋 Bienvenido a Python
+
+Bienvenid@ al nuevo modulo de python en este repositorio encontrarás recursos que te ayudaran con este nuevo reto para 
+aprender python, primero tendrás información de interés sobre python para que conoscas un poco sobre su trayectoria, 
+luego los pasos para clonar este repositorio y por ultimo instrucciónes del encarpetado, espero que disfutes tu paso 
+por python!! 🤗 
+
+
+
 # 🐍 ¿Qué es Python?
 
 **Python** es un lenguaje de programación interpretado, de alto nivel y con una sintaxis muy simple y clara.  
@@ -59,3 +68,30 @@ También en sectores como:
 - 📚 **Gran cantidad de recursos y documentación**
 - 💼 **Alta demanda en el mercado laboral**
 - 🤹‍♀️ **Versátil: sirve para casi todo tipo de proyectos**
+
+## 🚀 Para clonar el repositorio, puedes seguir los siguientes pasos:
+
+1. Abre una terminal o línea de comandos.
+2. Asegúrate de tener `git` instalado. Puedes comprobarlo con:
+   ```bash
+   git --version
+    ```
+3. Usa el siguiente comando para clonar el repositorio:  
+   ```bash
+   git clone https://github.com/Jhamile08/python.git
+    ```  
+4. Presiona Enter y espera a que se descargue el contenido.
+¡Listo! Ahora tendrás una copia del proyecto en tu equipo. 😄
+
+# Estructura del Proyecto: Curso de Python
+
+Este repositorio está dividido en tres carpetas principales que corresponden a los diferentes niveles de aprendizaje sobre Python, enfocados en bucles, tuplas, diccionarios y funciones.
+
+## 📂 Estructura del Proyecto
+
+```plaintext
+python-curso/
+│── 01_estructuras_basicas/   # Bucles y tuplas (nivel básico)
+│── 02_estructuras_compuestas/ # Diccionarios y combinaciones (nivel intermedio)
+│── 03_funciones_y_logica/    # Funciones y lógica combinada (nivel avanzado)
+│── README.md                 # Información general sobre la estructura y contenido
