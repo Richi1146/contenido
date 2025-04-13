@@ -1,10 +1,6 @@
 # 👋 Bienvenido a Python
 
-Bienvenid@ al nuevo modulo de python en este repositorio encontrarás recursos que te ayudaran con este nuevo reto para 
-aprender python, primero tendrás información de interés sobre python para que conoscas un poco sobre su trayectoria, 
-luego los pasos para clonar este repositorio y por ultimo instrucciónes del encarpetado, espero que disfutes tu paso 
-por python!! 🤗 
-
+Bienvenid@ al nuevo módulo de Python. En este repositorio encontrarás recursos que te ayudarán con este nuevo reto de aprender Python. Primero tendrás información de interés sobre Python para que conozcas un poco sobre su trayectoria. Luego, te proporcionaremos los pasos para clonar este repositorio y, por último, las instrucciones del encarpetado. ¡Espero que disfrutes tu paso por Python! 🤗
 
 
 # 🐍 ¿Qué es Python?
