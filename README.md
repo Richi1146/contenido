@@ -87,7 +87,7 @@ Este repositorio está dividido en tres carpetas principales que corresponden a 
 
 ```plaintext
 python-curso/
-│── 01_estructuras_basicas/   # Bucles y tuplas (nivel básico)
-│── 02_estructuras_compuestas/ # Diccionarios y combinaciones (nivel intermedio)
-│── 03_funciones_y_logica/    # Funciones y lógica combinada (nivel avanzado)
+│── 01_estructuras_basicas/   # Sintaxis basica sobre operadores aritmeticos y logicos
+│── 02_estructuras_compuestas/ # Condicionales, tuplas, listas y bucles
+│── 03_funciones_y_logica/    # Funciones, diccionarios
 │── README.md                 # Información general sobre la estructura y contenido

@@ -1,5 +1,5 @@
 # 🧠 Estructuras Condicionales en Python
-🔹 if
+### 🔹 if
 ### ✅ ¿Para qué sirve?
 Para tomar decisiones. Si una condición es verdadera, se ejecuta un bloque de código.
 
@@ -72,15 +72,15 @@ Imprime del 1 al 5. El bucle termina cuando contador llega a 6.
 Para recorrer una secuencia (como una lista, un string o un rango de números).
 
 ### 🕒 ¿Cuándo usarlo?
-Cuando sí sabes cuántas veces quieres repetir algo o cuando estás recorriendo elementos.
+Cuando sí sabes cuántas veces quieres repetir algo o cuando estás recorriendo elementos(listas), en este caso un string.
 
 > 🔍 Ejemplo:
 ```python
-nombres = ["Ana", "Luis", "Pedro"]
-for nombre in nombres:
-    print("Hola", nombre)
+nombre = "Ana"
+for letras in nombre:
+    print("Hola", letras)
 ```
-Imprime un saludo para cada persona en la lista.
+Imprime un saludo para cada letra en la lista.
 
 ## 🔸 Extra: range()
 Te permite repetir un bucle for un número fijo de veces.
@@ -98,4 +98,4 @@ for i in range(5):
         break  # se detiene al llegar a 3
     print(i)
 ```
-# Resultado: 0, 1, 2
+## Resultado: 0, 1, 2
