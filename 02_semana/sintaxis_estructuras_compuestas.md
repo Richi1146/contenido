@@ -48,6 +48,32 @@ elif nota >= 6:
 else:
     print("Reprobado")
 ```
+
+## 🔹 match case
+Python no tiene switch-case como otros lenguajes (como C, Java o JavaScript), pero desde Python 3.10 se puede usar una estructura parecida llamada match-case.
+
+### ✅ ¿Para qué sirve?
+Para comparar una variable contra varios posibles valores y ejecutar una acción distinta para cada uno.
+
+### 🕒 ¿Cuándo usarlo?
+Cuando una misma variable puede tener varios valores específicos, y quieres una opción distinta para cada valor.
+
+🔍 Ejemplo con match-case (Python 3.10+):
+```python
+opcion = input("Elige una fruta (manzana, banana, naranja): ")
+
+match opcion:
+    case "manzana":
+        print("Elegiste manzana 🍎")
+    case "banana":
+        print("Elegiste banana 🍌")
+    case "naranja":
+        print("Elegiste naranja 🍊")
+    case _:
+        print("Fruta no reconocida")
+```        
+📝 case _: funciona como el else en un if, y se ejecuta si ninguna opción anterior coincide.
+
 # 🔁 Bucles en Python (repetición de acciones)
 
 ## 🔹 while
