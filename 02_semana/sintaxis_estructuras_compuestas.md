@@ -108,12 +108,30 @@ for letras in nombre:
 ```
 Imprime un saludo para cada letra en la lista.
 
-## 🔸 Extra: range()
+## 🔸 Extra: range(para)
 Te permite repetir un bucle for un número fijo de veces.
 ```python
 for i in range(3):  # Va desde 0 hasta 2
     print("Iteración:", i)
 ```
+
+## range(empieza, para) 
+Tambien le podemos especificar desde que numero hasta que numero queremos que nos muestre
+```python
+for i in range(3, 6):  # Va desde 3 hasta 5
+    print("Iteración:", i)
+```
+aqui le decimos que empiece desde desde 3 hasta el 5 (recuerda que el ultimo numero no lo toma)
+
+## range(empieza, para, con paso de de) 
+Tambien le podemos especificar desde que numero hasta que numero queremos que nos muestre y a que paso queremos que vaya
+```python
+for i in range(2, 10, 2):  # Va desde 2 hasta 10, de 2 en 2
+    print("Iteración:", i)
+```
+aqui le decimos que empiece desde desde 2 hasta el 10 pero que vaya de 2 en 2
+
+
 ### 🔸 Extra: break y continue
 
 > break → Sale del bucle antes de terminar.
@@ -124,4 +142,4 @@ for i in range(5):
         break  # se detiene al llegar a 3
     print(i)
 ```
-## Resultado: 0, 1, 2
+Resultado: 0, 1, 2
