@@ -1,136 +1,156 @@
-## Arrays
-Los arrays son un formato que nos permite guardar varios datos en memoria
-aqui aprenderas manipularlos:
+# 🧠 Taller Investigativo: Arrays en Python
 
-# Crear una lista (array)
+A continuación se presentan diferentes preguntas y ejercicios que debes investigar y resolver para comprender el manejo de arrays (listas) en Python.
 
-Su sintaxis es usando corchetes y por dentro son deparados por ,
-```python
-mi_lista = [1, 2, 3, 4, 5]
-```
-# Acceder a elementos 
+---
 
-```python
-mi_lista = [10, 20, 30, 40]
-# Acceder a un elemento por índice (comienza desde 0)
-print(mi_lista[0])  # 10
-# Acceder al último elemento con índice negativo
-print(mi_lista[-1])  # 40
-```
-# Slicing (Rebanado)
+## 1. ¿Qué es un array o lista en Python?
 
-```python
-mi_lista = [10, 20, 30, 40, 50]
-# Obtener sublistas
-print(mi_lista[1:4])  # [20, 30, 40] (Desde el índice 1 hasta el 3)
-print(mi_lista[:3])  # [10, 20, 30] (Desde el inicio hasta el índice 2)
-print(mi_lista[2:])  # [30, 40, 50] (Desde el índice 2 hasta el final)
-```
+- Investiga qué son los arrays (o listas) en Python y para qué se utilizan.
+- ¿Cómo se declara una lista vacía?
+- ¿Cómo se crea una lista con valores iniciales?
 
-# Modificar elementos
+**Ejemplo práctico**:
+- Crea una lista llamada `mi_lista` con los números del 1 al 5.
 
-```python
-mi_lista = [10, 20, 30, 40]
-# Cambiar un elemento por su índice
-mi_lista[2] = 99  # [10, 20, 99, 40]
-```
+---
 
-# Agregar elementos
+## 2. ¿Cómo accedemos a los elementos de una lista?
 
-```python
-mi_lista = [10, 20, 30]
-# Usar append() para agregar al final
-mi_lista.append(40)  # [10, 20, 30, 40]
-# Usar insert() para agregar en una posición específica
-mi_lista.insert(1, 15)  # [10, 15, 20, 30, 40]
-# Usar extend() para agregar una lista a otra
-mi_lista.extend([50, 60])  # [10, 15, 20, 30, 40, 50, 60]
-```
+- ¿Cómo se accede al primer elemento de una lista?
+- ¿Qué significa usar un índice negativo?
+- ¿Qué pasa si intento acceder a un índice que no existe?
 
-# Eliminar elementos
+**Ejemplo práctico**:
+- Crea una lista `[10, 20, 30, 40]` y muestra el primer y el último elemento.
 
-```python
-mi_lista = [10, 20, 30, 40, 50]
-# Usar remove() para eliminar un valor específico
-mi_lista.remove(30)  # [10, 20, 40, 50]
-# Usar pop() para eliminar y devolver el último valor
-ultimo = mi_lista.pop()  # 50, y la lista queda [10, 20, 40]
-# Usar pop() con índice para eliminar en una posición específica
-mi_lista.pop(1)  # Elimina el elemento en la posición 1 (20), la lista queda [10, 40]
-# Usar del para eliminar por índice o rango
-del mi_lista[0]  # Elimina el primer elemento, lista queda [40]
-```
-# Buscar elementos
+---
 
-```python
-mi_lista = [10, 20, 30, 40, 50]
-# Usar in para verificar si un elemento está en la lista
-print(20 in mi_lista)  # True
-# Usar index() para obtener el índice de un elemento
-print(mi_lista.index(30))  # 2
-# Usar count() para contar cuántas veces aparece un elemento
-print(mi_lista.count(20))  # 1
-```
+## 3. ¿Qué es el "slicing" o rebanado de listas?
 
-# Ordenar elementos
+- ¿Qué significa "slicing" en listas?
+- ¿Cómo se obtiene una sublista usando slicing?
+- ¿Qué significa dejar vacío el inicio o el final en el slicing?
 
-```python
-mi_lista = [40, 10, 30, 20]
-# Ordenar la lista en orden ascendente
-mi_lista.sort()  # [10, 20, 30, 40]
-# Ordenar en orden descendente
-mi_lista.sort(reverse=True)  # [40, 30, 20, 10]
-# Usar sorted() para devolver una lista ordenada sin modificar la original
-lista_ordenada = sorted(mi_lista)  # [10, 20, 30, 40]
-```
+**Ejemplo práctico**:
+- A partir de `[10, 20, 30, 40, 50]`, obtén:
+  - Los elementos del índice 1 al 3.
+  - Los primeros 3 elementos.
+  - Los elementos desde el índice 2 hasta el final.
 
-# Invertir una lista
+---
 
-```python
-mi_lista = [10, 20, 30, 40]
-# Usar reverse() para invertir la lista en su lugar
-mi_lista.reverse()  # [40, 30, 20, 10]
-# Usar slicing para invertir sin modificar la original
-inverted_list = mi_lista[::-1]  # [10, 20, 30, 40]
-```
+## 4. ¿Cómo modificamos los elementos de una lista?
 
-# Copiar una lista
+- ¿Cómo se cambia el valor de un elemento de la lista?
+- ¿Qué pasa si modificamos un índice que no existe?
 
-```python
-mi_lista = [10, 20, 30]
-# Usar slicing para hacer una copia
-copia_lista = mi_lista[:]  # [10, 20, 30]
-# Usar la función list() para hacer una copia
-copia_lista = list(mi_lista)  # [10, 20, 30]
-# Usar copy() para hacer una copia (en Python 3.3+)
-copia_lista = mi_lista.copy()  # [10, 20, 30]
-```
+**Ejemplo práctico**:
+- Cambia el tercer elemento de `[10, 20, 30, 40]` por `99`.
 
-# Comprobar si la lista está vacía
+---
 
-```python
-mi_lista = []
-if not mi_lista:  # Si la lista está vacía
-    print("La lista está vacía")
-```
+## 5. ¿Cómo agregamos nuevos elementos a una lista?
 
+- ¿Cómo se agrega un elemento al final de la lista?
+- ¿Cómo se inserta un elemento en una posición específica?
+- ¿Cómo se combinan dos listas en una sola?
 
-# como ingreso varios datos por consola a un array?
+**Ejemplo práctico**:
+- A una lista `[10, 20, 30]` agrega:
+  - El número `40` al final.
+  - El número `15` en la posición 1.
+  - Los números `50` y `60` al final de la lista.
 
-```python
-# Crear una lista vacía
-mi_lista = []
+---
 
-# Número de elementos a ingresar
-n = int(input("¿Cuántos elementos quieres ingresar? "))
+## 6. ¿Cómo eliminamos elementos de una lista?
 
-# Llenar la lista con los elementos
-# Con el i + 1 mostramos el numero de producto en el que vamos, el orden, recuerda que empezamos desde 0 y por eso sumamos 1
-# para que el usuario no vea 0 sino que empezamos desde 1
-for i in range(n):
-    elemento = input(f"Ingrese el elemento {i+1}: ")
-    mi_lista.append(elemento)
+- ¿Cómo se elimina un valor específico de una lista?
+- ¿Qué hace el método `pop()`?
+- ¿Cómo se elimina un elemento usando `del`?
 
-# Mostrar la lista resultante
-print("La lista es:", mi_lista)
-```
+**Ejemplo práctico**:
+- De la lista `[10, 20, 30, 40, 50]`, realiza las siguientes acciones:
+  - Elimina el número `30`.
+  - Elimina el último elemento.
+  - Elimina el segundo elemento (índice 1).
+
+---
+
+## 7. ¿Cómo buscamos elementos dentro de una lista?
+
+- ¿Cómo se verifica si un elemento está presente en una lista?
+- ¿Cómo encontrar el índice de un elemento?
+- ¿Cómo contar cuántas veces aparece un valor en la lista?
+
+**Ejemplo práctico**:
+- Con la lista `[10, 20, 30, 40, 50]`:
+  - Verifica si el número `20` está en la lista.
+  - Encuentra el índice del número `30`.
+  - Cuenta cuántas veces aparece el número `20`.
+
+---
+
+## 8. ¿Cómo ordenamos los elementos de una lista?
+
+- ¿Cómo se ordena una lista de manera ascendente?
+- ¿Cómo se ordena en orden descendente?
+- ¿Qué diferencia hay entre `sort()` y `sorted()`?
+
+**Ejemplo práctico**:
+- Ordena la lista `[40, 10, 30, 20]`:
+  - Primero en orden ascendente.
+  - Luego en orden descendente.
+  - Crea una nueva lista ordenada sin modificar la original.
+
+---
+
+## 9. ¿Cómo invertimos el orden de los elementos de una lista?
+
+- ¿Cómo invertir una lista usando `reverse()`?
+- ¿Cómo invertir una lista usando slicing?
+
+**Ejemplo práctico**:
+- Invierte el orden de `[10, 20, 30, 40]` utilizando ambas técnicas.
+
+---
+
+## 10. ¿Cómo hacemos una copia de una lista?
+
+- ¿Cómo copiar una lista usando slicing?
+- ¿Cómo copiarla usando `list()`?
+- ¿Cómo copiarla usando `copy()`?
+
+**Ejemplo práctico**:
+- Copia la lista `[10, 20, 30]` de tres maneras diferentes.
+
+---
+
+## 11. ¿Cómo comprobamos si una lista está vacía?
+
+- ¿Cómo podemos saber si una lista no tiene elementos?
+
+**Ejemplo práctico**:
+- Crea una lista vacía y escribe un código que imprima `"La lista está vacía"` si no contiene datos.
+
+---
+
+## 12. ¿Cómo pedir varios datos al usuario y almacenarlos en una lista?
+
+- ¿Cómo pedimos al usuario la cantidad de datos que quiere ingresar?
+- ¿Cómo almacenamos esos datos en una lista usando un ciclo `for`?
+
+**Ejemplo práctico**:
+- Escribe un programa que:
+  - Pregunte al usuario cuántos elementos quiere ingresar.
+  - Luego pida esos elementos uno por uno.
+  - Finalmente, muestre la lista completa.
+
+---
+
+# ✏️ Instrucciones:
+
+- Investiga cada pregunta.
+- Realiza cada ejemplo práctico en tu editor de código.
+- Guarda todo tu trabajo para la revisión.
